@@ -7,7 +7,7 @@ var ques = []; //this array stores all the questions
         $('h3')[index].nextElementSibling.innerHTML = ''; //then erases the answers
     });
     
-    $('h3').click(function(e){ //when an h3 element is clicked...
+    $('h3').click(function(e){ //when an h3 element is clicked...      //the 'e' contains exactly which h3 element was clicked
         event.preventDefault(); //dont change the page or do any funky stuff
         if($(e.target)[0].nextElementSibling.innerHTML == ''){ //if the answers arent there...
             i = ques.indexOf($(e.target)[0].innerHTML); //find the answers in the answ array and..
